@@ -22,6 +22,9 @@ class FileManager
 	public static function getAssetFile(file:String, PATH_TYPE:PathTypes):String
 		return getPath('$STATE_FOLDER/$file', PATH_TYPE);
 
+	public static function getScriptFile(file:String, PATH_TYPE:PathTypes):String
+		return getPath('scripts/$file', PATH_TYPE);
+
 	public static function getDataFile(file:String, PATH_TYPE:PathTypes):String
 		return getPath('data/$file', PATH_TYPE);
 
